@@ -65,7 +65,7 @@ function Register() {
      const  mainContract= new ethers.Contract(add,ABI,signer);
              // setContract(mainContract);
     try{
-      const response=await axios.post('http://localhost:3000/registerUser',formData,{
+      const response=await axios.post('ngo-backend-production.up.railway.app/registerUser',formData,{
         headers:{
           'Content-Type':'application/json',
         },
